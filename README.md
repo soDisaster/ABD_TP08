@@ -53,6 +53,9 @@ Algorithme undo-redo pour la gestion des échecs de transactions, dans le cas de
 
 #### 3. Abort
 
+- Annule la transaction dans son ensemble
+- Efface les modifications temporaires et replace la base de données dans un état stable
+
 #### 4. Restart
 
 
