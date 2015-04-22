@@ -173,20 +173,10 @@ Journaux sérialisable : Journaux dont les transactions ont le même output et l
 Un graphe de précédence aussi appelé graphe de conflits ou encore graphe sérialisé est utilisé dans le contrôle des bases de données.  
 Ce graphe contient un noeud pour chaque transaction commitée et un arc entre deux transactions Ti et Tj si une action de la transaction Ti entre en conflit avec une action de la transaction Tj.  
 
-Un conflit équivalent correspond à l'invocation d'un même ensemble d'actions sur un même ensemble de transactions.
-A schedule is said to be conflict-serializable when the schedule is conflict-equivalent to one or more serial schedules.
-Un journal est dit conflit sérialisable quand le journal est conflit équivalent pour plusieurs journaux.
-Un autre définition est de dire que le journal est conflit sérializable si et seulement si le graphe de précédence est acyclique c'est à dire si le graphe est défini pour inclure des transactions non commitée puis que les cycles invoques ses transactions sans violation de conflits sérialisés.
-Another definition for conflict-serializability is that a schedule is conflict-serializable if and only if its precedence graph/serializability graph, when only committed transactions are considered, is acyclic (if the graph is defined to include also uncommitted transactions, then cycles involving uncommitted transactions may occur without conflict serializability violation).
-
-
-
-
-
-2. they order every pair of conflicting actions of two committed transactions in the same way.
-example. consider T1 = ⟨R(A),R(B),W(B),C⟩ and T2 = ⟨W (A), C ⟩. Then the following schedules are conflict equivalent.
-S1 = ⟨T1 : R(A),T2 : W(A),T2 : C,T1 : R(B),T1 : W(B),T1 : C⟩
-S2 = ⟨T1 : R(A),T1 : R(B),T2 : W(A),T2 : C,T1 : W(B),T1 : C⟩
+Un conflit équivalent correspond à l'invocation d'un même ensemble d'actions sur un même ensemble de transactions.  
+A schedule is said to be conflict-serializable when the schedule is conflict-equivalent to one or more serial schedules.  
+Un journal est dit conflit sérialisable quand le journal est conflit équivalent pour plusieurs journaux.  
+Une autre définition est de dire que le journal est conflit sérializable si et seulement si le graphe de précédence est acyclique c'est à dire si le graphe est défini pour inclure des transactions non commitée puis que les cycles invoqués ses transactions sans violation de conflits sérialisés.
 
 On suppose que les commits des transactions ont tous lieu à la fin du schedule.
 
