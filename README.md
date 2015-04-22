@@ -114,12 +114,12 @@ Variable F : -
 13. (COMMIT T2)
 ```
 
-Variable A :
-Variable B :
-Variable C :
-Variable D :
-Variable E :
-Variable F :
+Variable A : 75
+Variable B : 250
+Variable C : 25
+Variable D : -
+Variable E : -
+Variable F : -
 
 3. Restart à cause d'un malfonctionnement avant d'écrire l'enregistrement 14 dans le disque.
 
@@ -129,12 +129,12 @@ Variable F :
 14. (BEGIN T4)
 ```
 
-Variable A :
-Variable B :
-Variable C :
-Variable D :
-Variable E :
-Variable F :
+Variable A : 75
+Variable B : 250
+Variable C : 45
+Variable D : 35
+Variable E : 25
+Variable F : -
 
 4. Restart à cause d'un malfonctionnement avant d'écrire l'enregistrement 18 dans le disque.
 
@@ -144,12 +144,12 @@ Variable F :
 18. (COMMIT T4)
 ```
 
-Variable A :
-Variable B :
-Variable C :
-Variable D :
-Variable E :
-Variable F :
+Variable A : 75
+Variable B : 250
+Variable C : 45
+Variable D : 35
+Variable E : 65
+Variable F : -
 
 5. Restart à cause d'un malfonctionnement après avoir écrit l'enregistrement 18 dans le disque.
 
@@ -158,12 +158,12 @@ Variable F :
 ======== CRASH ========
 ```
 
-Variable A :
-Variable B :
-Variable C :
-Variable D :
-Variable E :
-Variable F :
+Variable A : 75
+Variable B : 250
+Variable C : 45
+Variable D : 35
+Variable E : 65
+Variable F : 150
 
 Exercice 4
 ----------
