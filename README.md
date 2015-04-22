@@ -42,6 +42,10 @@ Algorithme undo-redo pour la gestion des échecs de transactions, dans le cas de
 
 #### 1. Ecriture
 
+- Log de la base de données dans un état stable avant l'écriture (pour UNDO)
+- Écriture du fichier
+- Log de la base de données dans un état stable après l'écriture (pour REDO)
+
 #### 2. Commit
 
 #### 3. Abort
