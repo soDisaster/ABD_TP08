@@ -24,11 +24,16 @@ __Faux__. Principe de Write-Ahead Logging, et d'après les questions précédent
 
 #### 4. Les modifications de données sont propagées à la base de données avant de stocker de façon permanente le valeur précèdent des données dans le fichier log.
 
+__Faux__.
 
 #### 5. Les modifications de données sont propagées à la base de données après le stockage permanent du valeur précèdent des données dans le fichier log.
 
+__Vrai__.
 
 #### 6. Les modifications de données sont propagées à la base de données soit avant soit après le stockage permanent du valeur précèdent des données dans le fichier log.
+
+__Faux__.
+
 
 Exercice 2
 ----------
