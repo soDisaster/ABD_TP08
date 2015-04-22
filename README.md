@@ -24,15 +24,15 @@ __Faux__. Principe de Write-Ahead Logging, et d'après les questions précédent
 
 #### 4. Les modifications de données sont propagées à la base de données avant de stocker de façon permanente le valeur précèdent des données dans le fichier log.
 
-__Faux__.
+__Faux__. En cas de problème, on peut récupérer les anciennes données dans le fichier log. Si il y a une erreur et qu'elles ne sont pas enregistrées, les données sont définitivement perdues et donc irrécupérables. On converse donc l'état stable de la base de données avant toute modification.
 
 #### 5. Les modifications de données sont propagées à la base de données après le stockage permanent du valeur précèdent des données dans le fichier log.
 
-__Vrai__.
+__Vrai__. En cas de problème, on peut récupérer les anciennes données dans le fichier log. Si il y a une erreur et qu'elles ne sont pas enregistrées, les données sont définitivement perdues et donc irrécupérables. On converse donc l'état stable de la base de données avant toute modification.
 
 #### 6. Les modifications de données sont propagées à la base de données soit avant soit après le stockage permanent du valeur précèdent des données dans le fichier log.
 
-__Faux__.
+__Faux__. En cas de problème, on peut récupérer les anciennes données dans le fichier log. Si il y a une erreur et qu'elles ne sont pas enregistrées, les données sont définitivement perdues et donc irrécupérables. On converse donc l'état stable de la base de données avant toute modification.
 
 
 Exercice 2
