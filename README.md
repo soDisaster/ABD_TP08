@@ -20,6 +20,7 @@ __Vrai__. Principe de Write-Ahead Logging, c'est à dire que les modifications d
 
 #### 3. Toutes les modifications peuvent être propagées à la base de données soit avant soit après l'écriture de Commit sur le fichier log (et donc, soit avant soit après le commit).
 
+__Faux__. Principe de Write-Ahead Logging, et d'après les questions précédentes, les modifications ne peuvent être propagées à la base de données qu'une fois le commit écrit dans le fichier de log.
 
 #### 4. Les modifications de données sont propagées à la base de données avant de stocker de façon permanente le valeur précèdent des données dans le fichier log.
 
@@ -145,3 +146,13 @@ Variable F :
 
 Exercice 4
 ----------
+
+Journaux sérialisable : Journaux dont les transactions ont le même output et les mêmes effets sur le base de données stable.
+
+// A traduire et synthétiser
+We will say two schedules are conflict equivalent if 1. they involve the same set of actions of the
+same set of transactions, and
+2. they order every pair of conflicting actions of two committed transactions in the same way.
+example. consider T1 = ⟨R(A),R(B),W(B),C⟩ and T2 = ⟨W (A), C ⟩. Then the following schedules are conflict equivalent.
+S1 = ⟨T1 : R(A),T2 : W(A),T2 : C,T1 : R(B),T1 : W(B),T1 : C⟩
+S2 = ⟨T1 : R(A),T1 : R(B),T2 : W(A),T2 : C,T1 : W(B),T1 : C⟩
