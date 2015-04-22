@@ -99,12 +99,12 @@ Les enregistrements du fichier log ont le format (W, Tid, Variable, Old, New).
 10. (W, T2, D, 25, 35)
 ```
 
-Variable A :
-Variable B :
-Variable C :
-Variable D :
-Variable E :
-Variable F :
+Variable A : 75
+Variable B : 250
+Variable C : 25
+Variable D : -
+Variable E : -
+Variable F : -
 
 2. Restart à cause d'un malfonctionnement avant d'écrire l'enregistrement 13 dans le disque.
 
