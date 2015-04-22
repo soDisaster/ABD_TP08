@@ -38,15 +38,16 @@ __Faux__. En cas de problème, on peut récupérer les anciennes données dans l
 Exercice 2
 ----------
 
-Algorithme undo-redo pour la gestion des  échecs de transactions, dans le cas de :
+Algorithme undo-redo pour la gestion des échecs de transactions, dans le cas de :
 
-1. Ecriture
+#### 1. Ecriture
 
-2. Commit
+#### 2. Commit
 
-3. Abort
+#### 3. Abort
 
-4. Restart
+#### 4. Restart
+
 
 Exercice 3
 ----------
