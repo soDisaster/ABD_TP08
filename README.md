@@ -170,11 +170,8 @@ Exercice 4
 
 Journaux sérialisable : Journaux dont les transactions ont le même output et les mêmes effets sur le base de données stable.
 
-Un graphe de précédence aussi appelé graphe de conflits ou encore graphe sérialisé est utilisé dans le contexte de dans le contrôle des bases de données.
-Ce graphe contient un noeud pour chaque transaction comité
-et
-Un arc entre deux transactions Ti et Tj si une action de la transaction Ti entre en conflit avec une action de la transaction Tj.
-
+Un graphe de précédence aussi appelé graphe de conflits ou encore graphe sérialisé est utilisé dans le contrôle des bases de données.  
+Ce graphe contient un noeud pour chaque transaction commitée et un arc entre deux transactions Ti et Tj si une action de la transaction Ti entre en conflit avec une action de la transaction Tj.  
 
 // A traduire et synthétiser
 We will say two schedules are conflict equivalent if 1. they involve the same set of actions of the
