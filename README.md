@@ -195,3 +195,7 @@ S2 = {r1 [A] , r2 [A] ,w1[B] ,w2[B] , r1 [B] , r2 [B] ,w2[C] ,w1[D]}
 Conflits :
 - Transaction 2 : L'écriture de B a lieu après l'écriture de B dans la transaction 1
 - Transaction 1 : La lecture de B a lieu après l'écriture de B dans la transaction 2
+
+Suite à ces conflits, T1 et T2 travaillent chacun de leur côté avec une valeur de B potentiellement différente.  
+La valeur de B qui sera conservée dans la base sera celle de la dernière transaction à commiter ses modifications.  
+L'autre transaction aura donc travaillé avec des valeurs erronées.
