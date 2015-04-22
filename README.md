@@ -91,7 +91,7 @@ Les enregistrements du fichier log ont le format (W, Tid, Variable, Old, New).
 18. (COMMIT T4)
 ```
 
-1. Restart à cause d'un malfonctionnement avant d'écrire l'enregistrement 10 dans le disque.
+#### 1. Restart à cause d'un malfonctionnement avant d'écrire l'enregistrement 10 dans le disque.
 
 ```
 9.  (W, T3, E, 25, 65)
@@ -106,7 +106,7 @@ Variable D : -
 Variable E : -
 Variable F : -
 
-2. Restart à cause d'un malfonctionnement avant d'écrire l'enregistrement 13 dans le disque.
+#### 2. Restart à cause d'un malfonctionnement avant d'écrire l'enregistrement 13 dans le disque.
 
 ```
 12. (W, T2, C, 55, 45)
@@ -121,7 +121,7 @@ Variable D : -
 Variable E : -
 Variable F : -
 
-3. Restart à cause d'un malfonctionnement avant d'écrire l'enregistrement 14 dans le disque.
+#### 3. Restart à cause d'un malfonctionnement avant d'écrire l'enregistrement 14 dans le disque.
 
 ```
 13. (COMMIT T2)
@@ -136,7 +136,7 @@ Variable D : 35
 Variable E : 25
 Variable F : -
 
-4. Restart à cause d'un malfonctionnement avant d'écrire l'enregistrement 18 dans le disque.
+#### 4. Restart à cause d'un malfonctionnement avant d'écrire l'enregistrement 18 dans le disque.
 
 ```
 17. (W, T4, F, 120, 150)
@@ -151,7 +151,7 @@ Variable D : 35
 Variable E : 65
 Variable F : -
 
-5. Restart à cause d'un malfonctionnement après avoir écrit l'enregistrement 18 dans le disque.
+#### 5. Restart à cause d'un malfonctionnement après avoir écrit l'enregistrement 18 dans le disque.
 
 ```
 18. (COMMIT T4)
