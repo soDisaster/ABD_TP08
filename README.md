@@ -58,6 +58,11 @@ Algorithme undo-redo pour la gestion des échecs de transactions, dans le cas de
 
 #### 4. Restart
 
+- Recherche dans journal du dernier point de reprise
+- Traitement du journal du point de reprise vers la panne pour connaître les transactions validées et les transactions non validées
+- Traitement du journal en arrière pour défaire les transactions non validées (UNDO)
+- Traitement du journal en avant pour refaire les transactions validées (REDO)
+
 
 Exercice 3
 ----------
