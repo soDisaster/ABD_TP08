@@ -180,3 +180,21 @@ same set of transactions, and
 example. consider T1 = ⟨R(A),R(B),W(B),C⟩ and T2 = ⟨W (A), C ⟩. Then the following schedules are conflict equivalent.
 S1 = ⟨T1 : R(A),T2 : W(A),T2 : C,T1 : R(B),T1 : W(B),T1 : C⟩
 S2 = ⟨T1 : R(A),T1 : R(B),T2 : W(A),T2 : C,T1 : W(B),T1 : C⟩
+
+On suppose que les commits des transactions ont tous lieu à la fin du schedule.
+
+```
+S1 = {r1 [A] ,w1[B] , r2 [B] ,w2[C] , r3 [C] ,w3[A]}
+```
+
+Conflits :
+- Transaction 2 : La lecture de B a lieu après l'écriture de B dans la transaction 1
+- Transaction 3 : La lecture de C a lieu après l'écriture de C dans la transaction 2
+
+```
+S2 = {r1 [A] , r2 [A] ,w1[B] ,w2[B] , r1 [B] , r2 [B] ,w2[C] ,w1[D]}
+```
+
+Conflits :
+- Transaction 2 : L'écriture de B a lieu après l'écriture de B dans la transaction 1
+- Transaction 1 : La lecture de B a lieu après l'écriture de B dans la transaction 2
